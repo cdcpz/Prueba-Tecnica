@@ -1,0 +1,18 @@
+<div class="container">
+   
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Caracteristicas</th>
+     
+        
+      </tr>
+    </thead>
+    <tbody>
+     
+      <tr *ngFor="let item of servicio.selecionado.versions[0].characteristics">
+        <td>{{item.id}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

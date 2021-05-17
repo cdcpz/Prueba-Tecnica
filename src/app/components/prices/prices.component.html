@@ -1,0 +1,19 @@
+<div class="container">
+   
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Nombre precio</th>
+          <th>Monto</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of price.selecionado.versions[0].productOfferingPrices">
+          <td>{{item.versions[0].name}}</td>
+          <td>{{item.versions[0].price.amount}}</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>

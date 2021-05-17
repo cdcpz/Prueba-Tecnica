@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-sm-6">
+
+    <form [formGroup]="reactive">
+      <label>Ofertas</label>
+    <select  class="form-select" aria-label="Default select example" formControlName="id">
+      
+      <option *ngFor="let item of ofertas" [value]="item.id" >
+        {{item.versions[0].name}}></option>
+    </select>
+  </form>
+  </div>
+  <div class="col-sm-6">
+    <label>Id Ofertas</label>
+    <input [value]="this.datos.selecionado.id"
+      class="form-control"
+      type="text"
+
+      disabled
+      
+    />
+    <label>nombre</label>
+    <input
+    [value]="this.datos.name"
+      class="form-control"
+      type="text"
+      
+      disabled
+      readonly
+    />
+  </div>
+
+</div>
