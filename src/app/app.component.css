@@ -1,3 +1,7 @@
-*{padding: 30px;
-
+.container{
+    padding: 100px;
+    
+}
+.row{
+    padding: 20px;
 }

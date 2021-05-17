@@ -8,6 +8,9 @@ import { CharacteristicsComponent } from './components/characteristics/character
 import { PricesComponent } from './components/prices/prices.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {NgxPaginationModule} from 'ngx-pagination';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +18,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     OfferComponent,
     CharacteristicsComponent,
     PricesComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,NgxPaginationModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

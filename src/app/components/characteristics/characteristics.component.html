@@ -10,9 +10,12 @@
     </thead>
     <tbody>
      
-      <tr *ngFor="let item of servicio.selecionado.versions[0].characteristics">
+      <tr *ngFor="let item of servicio.selecionado.versions[0].characteristics | paginate: { itemsPerPage: 5, currentPage: page } ">
         <td>{{item.id}}</td>
       </tr>
+      <pagination-controls (pageChange)="page = $event"></pagination-controls>
     </tbody>
   </table>
+
+
 </div>

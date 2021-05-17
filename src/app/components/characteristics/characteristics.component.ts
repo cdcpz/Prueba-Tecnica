@@ -9,7 +9,8 @@ import { OfertasService } from 'src/app/service/ofertas.service';
 export class CharacteristicsComponent implements OnInit {
   servicio:OfertasService;
  
-
+  page=1;
+  pageSize=10;
   constructor(private service:OfertasService) { 
    this.servicio=this.service;
    console.log(this.service.selecionado);
